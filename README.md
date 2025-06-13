@@ -2,18 +2,20 @@
 
 A Microsoft Edge browser extension that automatically extracts and copies Bearer tokens from HTTP requests to your clipboard, with JWT decoding and analysis.
 
+_Disclaimer: 99% of the code and document has been generated using AI._
+
 <!--
 ![Extension Demo](screenshots/demo.png)
 -->
 
-## ✨ Features
+## Features
 
-- **🚀 One-click extraction** - Automatically copies the latest Bearer token to clipboard when you click the extension icon
-- **🔍 JWT Analysis** - Intelligently decodes JWT tokens and displays claims, expiration times, and token details
-- **⏰ Smart timing** - Shows token creation time, expiration status, and remaining validity
-- **🔄 Auto-close** - Popup automatically closes after 5 seconds (hover to prevent)
-- **🐛 Debug mode** - Shows request monitoring statistics when no tokens are found
-- **💾 Request history** - Tracks recent requests with Bearer tokens
+- ** One-click extraction** - Automatically copies the latest Bearer token to clipboard when you click the extension icon
+- ** JWT Analysis** - Intelligently decodes JWT tokens and displays claims, expiration times, and token details
+- ** Smart timing** - Shows token creation time, expiration status, and remaining validity
+- ** Auto-close** - Popup automatically closes after 5 seconds (hover to prevent)
+- ** Debug mode** - Shows request monitoring statistics when no tokens are found
+- ** Request history** - Tracks recent requests with Bearer tokens
 
 <!--
 ## 🖼️ Screenshots
@@ -23,7 +25,7 @@ A Microsoft Edge browser extension that automatically extracts and copies Bearer
 | ![JWT Analysis](screenshots/jwt-view.png) | ![Claims](screenshots/popup-demo.png) |
 -->
 
-## 🚀 Installation
+## Installation
 
 ### From Source (Developer Mode)
 
@@ -40,7 +42,7 @@ A Microsoft Edge browser extension that automatically extracts and copies Bearer
 2. **Extract** the zip file
 3. **Follow steps 2-5** from the "From Source" instructions above
 
-## 📖 Usage
+## Usage
 
 1. **Navigate** to any website that makes authenticated API calls (web apps, dashboards, etc.)
 2. **Perform actions** that trigger HTTP requests (login, navigate, submit forms)
@@ -50,11 +52,11 @@ A Microsoft Edge browser extension that automatically extracts and copies Bearer
 
 ### Supported Token Types
 
-- ✅ **JWT (JSON Web Tokens)** - Full decoding with claims analysis
-- ✅ **Generic Bearer tokens** - Raw token extraction and display
-- ✅ **Any Authorization header** - Automatic Bearer token detection
+- **JWT (JSON Web Tokens)** - Full decoding with claims analysis
+- **Generic Bearer tokens** - Raw token extraction and display
+- **Any Authorization header** - Automatic Bearer token detection
 
-## 🛠️ Development
+## Development
 
 ### Prerequisites
 
@@ -84,14 +86,14 @@ A Microsoft Edge browser extension that automatically extracts and copies Bearer
 - `src/popup.js` - Popup functionality and JWT decoding
 - `src/icons/` - Extension icons
 
-## 🔒 Privacy & Security
+## Privacy & Security
 
 - **Local processing only** - All token analysis happens locally in your browser
 - **No data transmission** - Tokens are never sent to external servers
 - **Temporary storage** - Only keeps tokens in memory during browser session
 - **Minimal permissions** - Only requests necessary permissions for functionality
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
@@ -101,20 +103,20 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 4. **Push** to the branch (`git push origin feature/amazing-feature`)
 5. **Open** a Pull Request
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🐛 Known Issues
+## Known Issues
 
 - Some websites with strict CORS policies may not expose Authorization headers
 - Extension requires active HTTP requests to capture tokens
 - Only works with standard "Bearer " token format
 
-## 📞 Support
+## Support
 
 If you encounter any issues or have feature requests, please [open an issue](../../issues) on GitHub.
 
-## ⭐ Acknowledgments
+## Acknowledgments
 
 - This plugin was developed with AI assitance(Claude)
