@@ -12,12 +12,12 @@ _Disclaimer: 99% of the code and document has been generated using AI._
 
 ## Features
 
-- ** One-click extraction** - Automatically copies the latest Bearer token to clipboard when you click the extension icon
-- ** JWT Analysis** - Intelligently decodes JWT tokens and displays claims, expiration times, and token details
-- ** Smart timing** - Shows token creation time, expiration status, and remaining validity
-- ** Auto-close** - Popup automatically closes after 5 seconds (hover to prevent)
-- ** Debug mode** - Shows request monitoring statistics when no tokens are found
-- ** Request history** - Tracks recent requests with Bearer tokens
+- **One-click extraction** - Automatically copies the latest Bearer token to clipboard when you click the extension icon
+- **JWT Analysis** - Intelligently decodes JWT tokens and displays claims, expiration times, and token details
+- **Smart timing** - Shows token creation time, expiration status, and remaining validity
+- **Auto-close** - Popup automatically closes after 5 seconds (hover to prevent)
+- **Debug mode** - Shows request monitoring statistics when no tokens are found
+- **Request history** - Tracks recent requests with Bearer tokens
 
 <!--
 ## 🖼️ Screenshots
