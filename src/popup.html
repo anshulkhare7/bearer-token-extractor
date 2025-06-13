@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 400px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    
+    .header h3 {
+      margin: 0;
+      font-size: 16px;
+      color: #333;
+    }
+    
+    #closeBtn {
+      background: none;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      color: #666;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+    
+    #closeBtn:hover {
+      background-color: #f0f0f0;
+    }
+    
+    #status {
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    
+    .success {
+      color: #107c10;
+    }
+    
+    .error {
+      color: #d13438;
+    }
+    
+    .loading {
+      color: #0078d4;
+    }
+    
+    .token-info {
+      background-color: #f8f9fa;
+      border: 1px solid #e1e5e9;
+      border-radius: 6px;
+      padding: 12px;
+      margin-top: 10px;
+    }
+    
+    .token-section {
+      margin-bottom: 12px;
+    }
+    
+    .token-section:last-child {
+      margin-bottom: 0;
+    }
+    
+    .section-title {
+      font-weight: bold;
+      font-size: 12px;
+      color: #333;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+    }
+    
+    .section-content {
+      font-family: monospace;
+      font-size: 11px;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 8px;
+      max-height: 100px;
+      overflow-y: auto;
+      word-break: break-all;
+    }
+    
+    .claims-grid {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 5px;
+      font-size: 11px;
+    }
+    
+    .claim-key {
+      font-weight: bold;
+      color: #0078d4;
+    }
+    
+    .claim-value {
+      font-family: monospace;
+      word-break: break-all;
+    }
+    
+    .auto-close-timer {
+      position: absolute;
+      top: 5px;
+      right: 50px;
+      font-size: 10px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="auto-close-timer" id="autoCloseTimer"></div>
+  <div class="header">
+    <h3>Bearer Token Extractor</h3>
+    <button id="closeBtn" title="Close">&times;</button>
+  </div>
+  
+  <div id="status" class="loading">Extracting token...</div>
+  <div id="tokenInfo" class="token-info" style="display: none;"></div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
