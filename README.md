@@ -5,6 +5,8 @@ A Microsoft Edge browser extension that automatically extracts and copies Bearer
 _Disclaimer: 99% of the code and document has been generated using AI._
 
 <!--
+[Prompt](https://claude.ai/share/7b25cc20-44df-4089-8981-4f900642868a)
+
 ![Extension Demo](screenshots/demo.png)
 -->
 
