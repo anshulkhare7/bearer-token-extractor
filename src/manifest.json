@@ -3,14 +3,8 @@
   "name": "Bearer Token Extractor",
   "version": "1.0",
   "description": "Extract bearer tokens from the latest HTTP request",
-  "permissions": [
-    "webRequest",
-    "activeTab",
-    "clipboardWrite"
-  ],
-  "host_permissions": [
-    "<all_urls>"
-  ],
+  "permissions": ["webRequest", "activeTab", "clipboardWrite"],
+  "host_permissions": ["<all_urls>"],
   "background": {
     "service_worker": "background.js"
   },
@@ -19,8 +13,8 @@
     "default_title": "Extract Bearer Token"
   },
   "icons": {
-    "16": "icon16.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
   }
 }
